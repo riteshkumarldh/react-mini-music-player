@@ -114,7 +114,7 @@ const MusicPlayer = ({ curIndex, setCurIndex }) => {
                 {/* timings */}
                 <div className="flex justify-between mt-1 px-2">
                   <p>{playingTime ? formatDuration(playingTime) : "00:00"}</p>
-                  <p>{formatDuration(totalDuration)}</p>
+                  <p>{totalDuration && formatDuration(totalDuration)}</p>
                 </div>
                 {/* all control button */}
                 <div className="flex justify-around items-center mt-4">
