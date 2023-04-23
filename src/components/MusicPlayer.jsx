@@ -15,7 +15,7 @@ const MusicPlayer = ({ curIndex, setCurIndex }) => {
       // total duration
       const duration = Math.floor(audioPlayer.current.duration);
       setTotalDuration(duration);
-    }, 100);
+    }, 1000);
 
     if (playing) {
       audioPlayer.current.play();
